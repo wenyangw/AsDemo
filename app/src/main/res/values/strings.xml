@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AsDemo</string>
+    <string name="btn_ok">确定</string>
 </resources>
