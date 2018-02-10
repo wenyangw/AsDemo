@@ -10,16 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
-        <activity android:name=".CodeViewActivity"></activity>
-        <activity android:name=".MixViewActivity">
-        </activity>
+        <activity android:name=".CodeViewActivity" />
+        <activity android:name=".MixViewActivity" />
         <activity android:name=".CustomViewActivity">
+        </activity>
+        <activity android:name=".constraintlayout.ConstrainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".constraintlayout.Main2Activity" />
     </application>
 
 </manifest>
