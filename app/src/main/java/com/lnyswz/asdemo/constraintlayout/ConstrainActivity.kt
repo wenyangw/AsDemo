@@ -34,12 +34,10 @@ class ConstrainActivity : AppCompatActivity() {
         val adapter =  ArrayAdapter(this, android.R.layout.simple_list_item_1, LIST_ITEMS)
         list.adapter = adapter
         list.setOnItemClickListener {adapterView, view, i, l ->
-            run({
-                val intent = Intent(this, LayoutDisplayActivity::class.java)
-                intent.putExtra(Intent.EXTRA_TITLE, LIST_ITEMS[i])
-                intent.putExtra(LayoutDisplayActivity.EXTRA_LAYOUT_ID, LAYOUT_IDS[i])
-                startActivity(intent)
-            })
+            val intent = Intent(this, LayoutDisplayActivity::class.java)
+            intent.putExtra(Intent.EXTRA_TITLE, LIST_ITEMS[i])
+            intent.putExtra(LayoutDisplayActivity.EXTRA_LAYOUT_ID, LAYOUT_IDS[i])
+            startActivity(intent)
         }
     }
 
